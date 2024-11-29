@@ -9,6 +9,8 @@
     "./code": "./src/code.tsx"
   },
   "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
     "check-types": "tsc --noEmit"
@@ -20,10 +22,14 @@
     "@types/node": "^20.11.24",
     "@types/react": "18.3.0",
     "@types/react-dom": "18.3.1",
+    "tsup": "^8.3.5",
     "typescript": "5.5.4"
   },
   "dependencies": {
     "react": "19.0.0-rc-5c56b873-20241107",
     "react-dom": "19.0.0-rc-5c56b873-20241107"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
