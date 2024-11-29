@@ -1,6 +1,6 @@
 {
-  "name": "lily-design-system",
-  "version": "0.0.0",
+  "name": "@lily/design-system",
+  "version": "1.0.0",
   "type": "module",
   "exports": {
     "./button": "./src/button.tsx",
