@@ -18,7 +18,8 @@
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
     "check-types": "tsc --noEmit",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "npm": "npm publish --access public"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
