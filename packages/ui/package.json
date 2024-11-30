@@ -1,18 +1,24 @@
 {
   "name": "@yunbh/design-system",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./themes.css": "./dist/themes.css"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "pnpm run clean && pnpm run build:js && pnpm run build:css",
+    "build:js": "tsup",
+    "build:css": "node scripts/build-css-modules.js",
     "dev": "tsup --watch",
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
