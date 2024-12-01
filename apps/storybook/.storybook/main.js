@@ -28,9 +28,6 @@ const config = {
       ...config,
       define: { "process.env": {} },
       resolve: {},
-      optimizeDeps: {
-        include: ["../../../packages/ui/dist"], // 빌드 시 포함
-      },
     };
   },
   docs: {
