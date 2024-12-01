@@ -1,5 +1,5 @@
 import fs from "fs";
-import * as theme from "../dist/index.js";
+import * as theme from "../dist/theme/index.js";
 
 // theme.css
 // :root {

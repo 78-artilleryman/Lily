@@ -1,12 +1,37 @@
 {
   "name": "@yunbh/design-system",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
+    },
+    "./hooks/button": {
+      "types": "./dist/hooks/button/index.d.ts",
+      "import": "./dist/hooks/button/index.js",
+      "require": "./dist/hooks/button/index.cjs"
+    },
+    "./hooks/toggle": {
+      "types": "./dist/hooks/toggle/index.d.ts",
+      "import": "./dist/hooks/toggle/index.js",
+      "require": "./dist/hooks/toggle/index.cjs"
+    },
+    "./theme": {
+      "types": "./dist/theme/index.d.ts",
+      "import": "./dist/theme/index.js",
+      "require": "./dist/theme/index.cjs"
+    },
+    "./variables/colors": {
+      "types": "./dist/variables/colors/index.d.ts",
+      "import": "./dist/variables/colors/index.js",
+      "require": "./dist/variables/colors/index.cjs"
+    },
+    "./ui/button": {
+      "types": "./dist/ui/button/index.d.ts",
+      "import": "./dist/ui/button/index.js",
+      "require": "./dist/ui/button/index.cjs"
     },
     "./themes.css": "./dist/themes.css"
   },
@@ -28,10 +53,16 @@
     "@types/node": "^20.11.24",
     "@types/react": "18.3.0",
     "@types/react-dom": "18.3.1",
+    "@vanilla-extract/css": "^1.16.1",
+    "@vanilla-extract/dynamic": "^2.1.2",
+    "@vanilla-extract/esbuild-plugin": "^2.3.12",
+    "@vanilla-extract/recipes": "^0.5.5",
+    "@vanilla-extract/sprinkles": "^1.6.3",
     "tsup": "^8.3.5",
     "typescript": "5.5.4"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "react": "19.0.0-rc-5c56b873-20241107",
     "react-dom": "19.0.0-rc-5c56b873-20241107"
   },
