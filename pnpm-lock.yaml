@@ -117,9 +117,6 @@ importers:
       '@vitest/ui':
         specifier: ^2.0.5
         version: 2.1.6(vitest@2.1.6)
-      '@yunbh/design-system':
-        specifier: 1.0.0
-        version: 1.0.0
       chromatic:
         specifier: ^11.7.0
         version: 11.19.0
@@ -157,9 +154,6 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      '@storybook/addon-actions':
-        specifier: ^8.2.6
-        version: 8.4.5(storybook@8.4.5(prettier@3.3.3))
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -1524,9 +1518,6 @@ packages:
 
   '@vitest/utils@2.1.6':
     resolution: {integrity: sha512-ixNkFy3k4vokOUTU2blIUvOgKq/N2PW8vKIjZZYsGJCMX69MRa9J2sKqX5hY/k5O5Gty3YJChepkqZ3KM9LyIQ==}
-
-  '@yunbh/design-system@1.0.0':
-    resolution: {integrity: sha512-DJG+OxQEwBolRXtIXprXr+5seUf03TV6TXSZwxtY+mrA59W5TXWQHKxPe7hFaRb4XevNtZFDmlzHcC3HBPeOCA==}
 
   '@zeit/schemas@2.36.0':
     resolution: {integrity: sha512-7kjMwcChYEzMKjeex9ZFXkt1AyNov9R5HZtjBKVsmVpw7pa7ZtlCGvCBC2vnnXctaYN+aRI61HjIqeetZW5ROg==}
@@ -5473,11 +5464,6 @@ snapshots:
       '@vitest/pretty-format': 2.1.6
       loupe: 3.1.2
       tinyrainbow: 1.2.0
-
-  '@yunbh/design-system@1.0.0':
-    dependencies:
-      react: 19.0.0-rc-5c56b873-20241107
-      react-dom: 19.0.0-rc-5c56b873-20241107(react@19.0.0-rc-5c56b873-20241107)
 
   '@zeit/schemas@2.36.0': {}
 
