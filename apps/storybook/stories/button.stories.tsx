@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button } from "@yunbh/design-system/button";
-import React from "react";
+import { Button } from "../../../packages/ui/dist/ui/button/Button.js";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -13,6 +12,6 @@ export type Story = StoryObj<typeof Button>;
 
 export const ButtonTestStory: Story = {
   render: () => {
-    return <Button appName="test">Button</Button>;
+    return <Button>Button</Button>;
   },
 };
