@@ -1,3 +1,4 @@
+import { MouseEvent } from "react";
 import { useToggle } from "../toggle/useToggle.js";
 import { OverloadedToggleButtonFunction } from "./types.js";
 import { useButton } from "./useButton.js";
@@ -8,7 +9,7 @@ export const useToggleButton: OverloadedToggleButtonFunction = (props: any, isSe
     isSelected,
   });
 
-  const handleClick = (event: React.MouseEvent) => {
+  const handleClick = (event: MouseEvent) => {
     toggle();
     props?.onClick?.(event);
   };

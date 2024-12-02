@@ -1,3 +1,4 @@
+import { KeyboardEvent } from "react";
 import { BaseButtonProps, OverloadedButtonFunction } from "./types.js";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -6,7 +7,7 @@ export const useButton: OverloadedButtonFunction = (props: any): any => {
 
   const disabled = isDisabled || isLoading;
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
+  const handleKeyDown = (event: KeyboardEvent<HTMLButtonElement>) => {
     onKeyDown?.(event);
 
     if (event.key === "Spacebar" || event.key === "32" || event.key === " ") {
