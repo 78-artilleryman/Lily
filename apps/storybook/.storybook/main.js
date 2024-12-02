@@ -1,12 +1,13 @@
 import { dirname, join } from "path";
+import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 
 function getAbsolutePath(value) {
   return dirname(require.resolve(join(value, "package.json")));
 }
 
 const config = {
-  stories: ["../stories/*.stories.tsx", "../stories/**/*.stories.tsx"],
-  aaddons: [
+  stories: ["../stories/**/*.stories.tsx"],
+  addons: [
     getAbsolutePath("@storybook/addon-onboarding"),
     getAbsolutePath("@storybook/addon-links"),
     getAbsolutePath("@storybook/addon-essentials"),
@@ -28,6 +29,7 @@ const config = {
       ...config,
       define: { "process.env": {} },
       resolve: {},
+      plugins: [...(config.plugins || []), vanillaExtractPlugin()],
     };
   },
   docs: {
