@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { forwardRef, MouseEvent, Ref, useCallback, useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 import { useButton } from "../../hooks/button/useButton.js";
-import chevronDownIcon from "../../icons/chevron-down.svg";
 import { useAccordionContext } from "./AccordionContext.js";
 import { accordionButtonStyle, accordionArrowButtonStyle, rotatedStyle } from "./style.css.js";
 import { AccordionButtonProps } from "./types.js";
@@ -31,11 +31,7 @@ function AccordionButton(props: AccordionButtonProps, ref: Ref<HTMLButtonElement
   return (
     <button {...buttonProps} ref={ref} className={clsx([accordionButtonStyle, className])}>
       {children}
-      <img
-        src={chevronDownIcon}
-        alt="아코디언 버튼"
-        className={clsx(accordionArrowButtonStyle, { [rotatedStyle]: isActive })}
-      />
+      <IoIosArrowDown className={clsx(accordionArrowButtonStyle, { [rotatedStyle]: isActive })} />
     </button>
   );
 }

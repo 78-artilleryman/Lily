@@ -1,6 +1,6 @@
 {
   "name": "@yunbh/design-system",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "main": "dist/index.js",
   "type": "module",
   "exports": {
@@ -71,7 +71,8 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "react": "19.0.0-rc-5c56b873-20241107",
-    "react-dom": "19.0.0-rc-5c56b873-20241107"
+    "react-dom": "19.0.0-rc-5c56b873-20241107",
+    "react-icons": "^5.3.0"
   },
   "publishConfig": {
     "access": "public"

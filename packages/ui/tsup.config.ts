@@ -3,8 +3,9 @@ import { defineConfig } from "tsup";
 
 export default defineConfig(options => ({
   entryPoints: ["src"],
+  assets: ["**/*.svg"],
   format: ["cjs", "esm"],
-  dts: false,
+  dts: true,
   sourcemap: true,
   external: ["react"],
   esbuildPlugins: [vanillaExtractPlugin()],
