@@ -34,6 +34,11 @@
       "import": "./dist/ui/button/index.js",
       "require": "./dist/ui/button/index.cjs"
     },
+    "./ui/accordion": {
+      "types": "./dist/ui/accordion/index.d.ts",
+      "import": "./dist/ui/accordion/index.js",
+      "require": "./dist/ui/accordion/index.cjs"
+    },
     "./themes.css": "./dist/themes.css",
     "./style.css": "./dist/index.css"
   },
