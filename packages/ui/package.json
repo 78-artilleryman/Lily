@@ -1,6 +1,7 @@
 {
   "name": "@yunbh/design-system",
   "version": "1.2.2",
+  "main": "dist/index.js",
   "type": "module",
   "exports": {
     ".": {
@@ -33,7 +34,8 @@
       "import": "./dist/ui/button/index.js",
       "require": "./dist/ui/button/index.cjs"
     },
-    "./themes.css": "./dist/themes.css"
+    "./themes.css": "./dist/themes.css",
+    "./style.css": "./dist/index.css"
   },
   "scripts": {
     "build": "pnpm run clean && pnpm run build:js && pnpm run build:css",
