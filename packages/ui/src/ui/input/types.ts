@@ -1,4 +1,4 @@
-import { UseInputProps } from "../../hooks/input/index.js";
+import { UseInputProps } from "../../hooks/input/types.js";
 import { vars } from "../../theme/index.js";
 
 type Size = "lg" | "md" | "sm" | "xs";

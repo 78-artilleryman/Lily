@@ -11,8 +11,8 @@ function Input(props: InputProps, ref: Ref<HTMLInputElement>) {
     color = "slate",
     size = "lg",
     variant = "outline",
-    errorBorderColor = "#E53E3E",
-    focusBorderColor = "#3182CE",
+    errorBorderColor = "#ef4444",
+    focusBorderColor = "#3b82f6",
     className,
     style,
     ...rest
