@@ -5,9 +5,7 @@ import { useButton } from "./useButton.js";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const useToggleButton: OverloadedToggleButtonFunction = (props: any, isSelected?: boolean): any => {
-  const { isSelected: _isSelected, toggle } = useToggle({
-    isSelected,
-  });
+  const { isSelected: _isSelected, toggle } = useToggle(isSelected);
 
   const handleClick = (event: MouseEvent) => {
     toggle();
