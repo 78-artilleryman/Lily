@@ -3,6 +3,20 @@ export const color = {
   white: "#fff",
 };
 
+export const slate = {
+  50: "#f8fafc",
+  100: "#f1f5f9",
+  200: "#e2e8f9",
+  300: "#cbd5e1",
+  400: "#94a3b8",
+  500: "#64748b",
+  600: "#475569",
+  700: "#334155",
+  800: "#1e293b",
+  900: "#0f182a",
+  950: "#020617",
+};
+
 export const gray = {
   50: "#f9fafb",
   100: "#f3f4f6",
