@@ -3,7 +3,6 @@ import { defineConfig } from "tsup";
 
 export default defineConfig(options => ({
   entryPoints: ["src"],
-  assets: ["**/*.svg"],
   format: ["cjs", "esm"],
   dts: true,
   sourcemap: true,

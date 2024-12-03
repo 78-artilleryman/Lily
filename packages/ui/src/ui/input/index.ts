@@ -1,2 +1,2 @@
-export type { InputProps, InputGroupProps, InputLeftAddonProps } from "./types.js";
-export { Input } from "./input.js";
+export type { InputProps } from "./types.js";
+export { Input } from "./Input.js";
