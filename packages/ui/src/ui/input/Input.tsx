@@ -15,6 +15,7 @@ function Input(props: InputProps, ref: Ref<HTMLInputElement>) {
     focusBorderColor = "#3b82f6",
     className,
     style,
+    isInvalid,
     ...rest
   } = props;
 
@@ -23,6 +24,7 @@ function Input(props: InputProps, ref: Ref<HTMLInputElement>) {
   return (
     <input
       {...inputProps}
+      data-invalid={isInvalid ? "true" : "false"}
       ref={ref}
       className={clsx([
         inputStyle({
