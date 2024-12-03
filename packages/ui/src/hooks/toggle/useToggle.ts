@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
-import { ToggleProps, UseToggleReturn } from "./types.js";
+import { UseToggleReturn } from "./types.js";
 
-export const useToggle = ({ isSelected = false }: ToggleProps): UseToggleReturn => {
+export const useToggle = (isSelected = false): UseToggleReturn => {
   const [toggle, setToggle] = useState<boolean>(isSelected);
 
   const handleToggle = useCallback(() => {
