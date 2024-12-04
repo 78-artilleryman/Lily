@@ -1,6 +1,6 @@
 {
   "name": "@yunbh/design-system",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "main": "dist/index.js",
   "type": "module",
   "exports": {
@@ -53,6 +53,11 @@
       "types": "./dist/ui/switch/index.d.ts",
       "import": "./dist/ui/switch/index.js",
       "require": "./dist/ui/switch/index.cjs"
+    },
+    "./ui/select": {
+      "types": "./dist/ui/select/index.d.ts",
+      "import": "./dist/ui/select/index.js",
+      "require": "./dist/ui/select/index.cjs"
     },
     "./themes.css": "./dist/themes.css",
     "./style.css": "./dist/index.css"
