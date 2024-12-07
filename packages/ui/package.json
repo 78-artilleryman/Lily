@@ -1,6 +1,6 @@
 {
   "name": "@yunbh/design-system",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "main": "dist/index.js",
   "type": "module",
   "exports": {
@@ -9,55 +9,25 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./hooks/button": {
-      "types": "./dist/hooks/button/index.d.ts",
-      "import": "./dist/hooks/button/index.js",
-      "require": "./dist/hooks/button/index.cjs"
+    "./hooks/*": {
+      "types": "./dist/hooks/*/index.d.ts",
+      "import": "./dist/hooks/*/index.js",
+      "require": "./dist/hooks/*/index.cjs"
     },
-    "./hooks/toggle": {
-      "types": "./dist/hooks/toggle/index.d.ts",
-      "import": "./dist/hooks/toggle/index.js",
-      "require": "./dist/hooks/toggle/index.cjs"
-    },
-    "./hooks/input": {
-      "types": "./dist/hooks/input/index.d.ts",
-      "import": "./dist/hooks/input/index.js",
-      "require": "./dist/hooks/input/index.cjs"
-    },
-    "./theme": {
-      "types": "./dist/theme/index.d.ts",
-      "import": "./dist/theme/index.js",
-      "require": "./dist/theme/index.cjs"
+    "./ui/*": {
+      "types": "./dist/ui/*/index.d.ts",
+      "import": "./dist/ui/*/index.js",
+      "require": "./dist/ui/*/index.cjs"
     },
     "./variables/colors": {
       "types": "./dist/variables/colors/index.d.ts",
       "import": "./dist/variables/colors/index.js",
       "require": "./dist/variables/colors/index.cjs"
     },
-    "./ui/button": {
-      "types": "./dist/ui/button/index.d.ts",
-      "import": "./dist/ui/button/index.js",
-      "require": "./dist/ui/button/index.cjs"
-    },
-    "./ui/accordion": {
-      "types": "./dist/ui/accordion/index.d.ts",
-      "import": "./dist/ui/accordion/index.js",
-      "require": "./dist/ui/accordion/index.cjs"
-    },
-    "./ui/input": {
-      "types": "./dist/ui/input/index.d.ts",
-      "import": "./dist/ui/input/index.js",
-      "require": "./dist/ui/input/index.cjs"
-    },
-    "./ui/switch": {
-      "types": "./dist/ui/switch/index.d.ts",
-      "import": "./dist/ui/switch/index.js",
-      "require": "./dist/ui/switch/index.cjs"
-    },
-    "./ui/select": {
-      "types": "./dist/ui/select/index.d.ts",
-      "import": "./dist/ui/select/index.js",
-      "require": "./dist/ui/select/index.cjs"
+    "./theme": {
+      "types": "./dist/theme/index.d.ts",
+      "import": "./dist/theme/index.js",
+      "require": "./dist/theme/index.cjs"
     },
     "./themes.css": "./dist/themes.css",
     "./style.css": "./dist/index.css"
