@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 
 //local
-import { Tag } from "../../../../../packages/ui/src/ui/tag/Tag.js";
+import { Tag } from "@yunbh/design-system/ui/tag";
 
 const meta: Meta<typeof Tag> = {
   component: Tag,
@@ -13,7 +13,7 @@ const meta: Meta<typeof Tag> = {
 export default meta;
 type Story = StoryObj<typeof Tag>;
 
-export const InputStory: Story = {
+export const TagStory: Story = {
   render: () => (
     <div style={{ display: "flex", gap: "10px" }}>
       <Tag>신랑측</Tag>
