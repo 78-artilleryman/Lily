@@ -6,3 +6,4 @@ export * as select from "./select/index.js";
 export * as fileInput from "./fileInput/index.js";
 export * as tag from "./tag/index.js";
 export * as modal from "./modal/index.js";
+export * as toast from "./toast/index.js";
