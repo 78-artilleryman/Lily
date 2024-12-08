@@ -118,8 +118,8 @@ importers:
         specifier: ^2.0.5
         version: 2.1.6(vitest@2.1.6)
       '@yunbh/design-system':
-        specifier: ^1.7.0
-        version: 1.7.0
+        specifier: ^1.8.0
+        version: 1.8.0
       chromatic:
         specifier: ^11.7.0
         version: 11.19.0
@@ -1533,8 +1533,8 @@ packages:
   '@vitest/utils@2.1.6':
     resolution: {integrity: sha512-ixNkFy3k4vokOUTU2blIUvOgKq/N2PW8vKIjZZYsGJCMX69MRa9J2sKqX5hY/k5O5Gty3YJChepkqZ3KM9LyIQ==}
 
-  '@yunbh/design-system@1.7.0':
-    resolution: {integrity: sha512-p4MYoR6CQukHXrZrvf+s/1hOCPbrGRWvRNDR7JNpORZiqYVWtobJTYOlY1QMrpCQAu7Ick45gpW4gYKZud5zqw==}
+  '@yunbh/design-system@1.8.0':
+    resolution: {integrity: sha512-8QMUpKdF74UiOuLaap4RIX82TTvnK+s5YvRvjhyJ/dW3JYZpuSZFZJGd71vaf6uoVeqxkhy+rC48wFGtWZ4R3A==}
 
   '@zeit/schemas@2.36.0':
     resolution: {integrity: sha512-7kjMwcChYEzMKjeex9ZFXkt1AyNov9R5HZtjBKVsmVpw7pa7ZtlCGvCBC2vnnXctaYN+aRI61HjIqeetZW5ROg==}
@@ -5503,7 +5503,7 @@ snapshots:
       loupe: 3.1.2
       tinyrainbow: 1.2.0
 
-  '@yunbh/design-system@1.7.0':
+  '@yunbh/design-system@1.8.0':
     dependencies:
       clsx: 2.1.1
       react: 19.0.0-rc-5c56b873-20241107
