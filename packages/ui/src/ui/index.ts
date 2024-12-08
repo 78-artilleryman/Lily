@@ -4,3 +4,4 @@ export * as input from "./input/index.js";
 export * as switch from "./switch/index.js";
 export * as select from "./select/index.js";
 export * as fileInput from "./fileInput/index.js";
+export * as Tag from "./tag/index.js";
