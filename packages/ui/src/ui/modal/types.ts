@@ -1,7 +1,6 @@
 import { FormEvent, PropsWithChildren, ReactNode } from "react";
 
 export type ModalContextStates = {
-  title?: string;
   outlineButtonTitle?: string;
   isLoading?: boolean;
   isDisabled?: boolean;

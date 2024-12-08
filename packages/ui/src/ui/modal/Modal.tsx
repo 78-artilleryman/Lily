@@ -1,5 +1,7 @@
+import clsx from "clsx";
 import { createContext, forwardRef, useContext } from "react";
 import { createPortal } from "react-dom";
+import { modalStyle } from "./style.css.js";
 import { ModalContextStates, ModalContextValues } from "./types.js";
 
 const initialModalContextState = {
@@ -16,12 +18,18 @@ export function useModalContext() {
 }
 
 const Modal = (props: ModalContextValues) => {
-  const modalElement = document.querySelector("#modal")!;
+  let modalElement = document.querySelector("#modal")!;
+
+  if (!modalElement) {
+    modalElement = document.createElement("div");
+    modalElement.setAttribute("id", "modal");
+    document.body.appendChild(modalElement);
+  }
 
   const { children, value, className } = props;
   return createPortal(
     <ModalContext.Provider value={value}>
-      <div className={className}>{children}</div>
+      <div className={clsx([modalStyle(), className])}>{children}</div>
     </ModalContext.Provider>,
     modalElement
   );

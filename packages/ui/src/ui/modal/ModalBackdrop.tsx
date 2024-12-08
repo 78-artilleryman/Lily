@@ -10,4 +10,4 @@ const ModalBackdrop = () => {
 };
 
 const _ModalBackdrop = forwardRef(ModalBackdrop);
-export { _ModalBackdrop as _ModalBackdrop };
+export { _ModalBackdrop as ModalBackdrop };
