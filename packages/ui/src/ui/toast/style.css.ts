@@ -1,4 +1,5 @@
 import { keyframes, style } from "@vanilla-extract/css";
+import { recipe } from "@vanilla-extract/recipes";
 
 // 애니메이션 정의
 const slideUp = keyframes({
@@ -43,15 +44,30 @@ export const toastContainerStyle = style({
   zIndex: 99999,
 });
 
-export const toastStyle = style({
-  width: "100%",
-  maxWidth: "17.5rem",
-  backgroundColor: "var(--gray-900)",
-  padding: "0.5rem 0.75rem",
-  color: "var(--gray-50)",
-  borderRadius: "var(--radii-md)",
-  textAlign: "center",
-  animation: `${slideUp} 0.3s ease-out`,
+export const toastStyle = recipe({
+  base: {
+    width: "100%",
+    maxWidth: "17.5rem",
+
+    padding: "0.5rem 0.75rem",
+    color: "var(--gray-50)",
+    borderRadius: "var(--radii-md)",
+    textAlign: "center",
+    animation: `${slideUp} 0.3s ease-out`,
+  },
+  variants: {
+    type: {
+      common: {
+        backgroundColor: "var(--gray-900)",
+      },
+      error: {
+        backgroundColor: "var(--red-400)",
+      },
+      success: {
+        backgroundColor: "var(--blue-400)",
+      },
+    },
+  },
 });
 
 export const slideDown = style({

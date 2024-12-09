@@ -2,7 +2,7 @@ import { slideDown, toastStyle } from "./style.css.js";
 import { ToastPayload } from "./types.js";
 
 export const Toast = (props: ToastPayload) => {
-  const { message } = props;
+  const { message, type = "common", isExiting } = props;
 
-  return <div className={props.isExiting ? slideDown : toastStyle}>{message}</div>;
+  return <div className={isExiting ? slideDown : toastStyle({ type })}>{message}</div>;
 };
